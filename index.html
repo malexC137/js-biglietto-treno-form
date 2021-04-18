@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="my-style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class="bg-granata">
+    <header class="container text-center">
+        <h1 class="mg-top-bot-20 font-40 text-white">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    </header>
+    <main class="container text-center">
+        <div class="box-input bg-white col-lg-12 text-center mg-bot-20">
+            <form action="" id="myForm">
+                <div class="col-lg-4 input-col">
+                    <h6 class="text-granata font-15">Nome e cognome</h6>
+                    <input class="ticket-input" type="text" placeholder=" Nome completo" name="nomeCognome">
+                </div>
+                <div class="col-lg-4 input-col">
+                    <h6 class="text-granata font-15">Chilometri da percorrere</h6>
+                    <input class="ticket-input" type="text" placeholder=" Chilometri" name="chilometri">
+                </div>
+                <div class="col-lg-4 input-col">
+                    <h6 class="text-granata font-15">Fascia d'età</h6>
+                    <select name="age" id="fasciaDiEta" class="ticket-input">
+                        <option value="minorenne">Minorenne</option>
+                        <option value="maggiorenne">Maggiorenne</option>
+                        <option value="adulto">Adulto</option>
+                    </select>
+                </div>
+                <div class="col-lg-12">
+                    <button class="my-button">Genera</button>
+                    <button class="my-button" type="submit" onClick="refreshPage()">Annulla</button>
+                </div>
+            </form>
+        </div>
+        <h1 class="font-40 text-white">IL TUO BIGLIETTO</h1>
+        <div class="my-box box-output bg-white col-lg-12">
+            <div class="col-lg-12">
+                <h3 class="user-details lefted">DETTAGLI PASSEGGERO</h3>
+            </div>
+            <div class="ticket-row col-lg-12">
+                <div class="col-lg-3 ticket-col bg-granata">
+                    <div class="col-top">
+                        <h3 class="text-white lefted">NOME PASSEGGERO</h3>
+                    </div>
+                    <div class="col-bot">
+                    <h3 class="lefted text-white"><span id="nomeVisitatore"></span></h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 ticket-col">
+                    <div class="col-top">
+                        <h4 class="lefted pad-top-20">Offerta</h4>
+                    </div>
+                    <div class="col-bot">
+                        <h4 class="lefted pad-top-20">Sconto<span id="ageDiscount"></span></h4> 
+                    </div>
+                </div>
+                <div class="col-lg-3 ticket-col">
+                    <div class="col-lg-6">
+                        <div class="col-top">
+                            <h4 class="lefted pad-top-20">Carrozza</h4>
+                        </div>
+                        <div class="col-bot">
+                            <h4 class="lefted pad-top-20" id="carrozza-num"></h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="col-top">
+                            <h4 class="lefted pad-top-20">Codice CP</h4>
+                        </div>
+                        <div class="col-bot">
+                            <h4 class="lefted pad-top-20" id="codice-cp"></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 ticket-col">
+                    <div class="col-top">
+                        <h4 class="lefted pad-top-20">Costo biglietto</h4>
+                    </div>
+                    <div class="col-bot">
+                        <h4 class="lefted pad-top-20"><span id="ticketPrice"></span></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </main>
+    <script src="train-ticket.js"></script>
+</body>
+</html>

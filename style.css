@@ -1,0 +1,82 @@
+.box-input {
+height: 150px;
+border-radius: 10px;
+}
+
+.ticket-input {
+    height: 30px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(170, 42, 81);
+}
+
+.my-button {
+    height: 30px;
+    padding: 0 10px 0 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-style: solid;
+    border-color: rgb(170, 42, 81);
+    color: rgb(170, 42, 81);
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.bg-granata {
+    background-color: rgb(170, 42, 81);
+}
+
+.text-granata {
+    color: rgb(170, 42, 81);
+}
+
+.box-output {
+    height: 250px;
+}
+
+.input-col {
+    height: 100px;
+}
+
+.input-col > h6 {
+    margin-top: 20px;
+}
+
+.font-15 {
+    font-size: 15px;
+}
+
+.ticket-col {
+border-top: solid 2px rgb(170, 42, 81);
+border-bottom: solid 2px rgb(170, 42, 81);
+display: table;
+}
+
+
+.ticket-row {
+    padding: 0 15px 15px 15px;
+}
+
+.col-top {
+    height: 90px;
+    
+}
+
+.col-bot {
+    height: 60px;
+}
+
+.col-top > h4, .col-bot > h4 {
+    text-align: left;
+}
+
+.box-output > div > h3 {
+    margin-bottom: 0px;
+}
+
+.user-details {
+    height: 50px;
+    padding-top: 20px;
+}
+
+ 
