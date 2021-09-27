@@ -11,42 +11,42 @@
 </head>
 <body class="bg-granata">
     <header class="container text-center">
-        <h1 class="mg-top-bot-20 font-40 text-white">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        <h1 class="mg-top-bot-20 font-40 text-white">ESTIMATE YOUR TICKET PRICE</h1>
     </header>
     <main class="container text-center">
         <div class="box-input bg-white col-lg-12 text-center mg-bot-20">
             <form action="" id="myForm">
                 <div class="col-lg-4 input-col">
-                    <h6 class="text-granata font-15">Nome e cognome</h6>
-                    <input class="ticket-input" type="text" placeholder=" Nome completo" name="nomeCognome">
+                    <h6 class="text-granata font-15">FULL NAME</h6>
+                    <input class="ticket-input" type="text" placeholder=" Full name" name="nomeCognome">
                 </div>
                 <div class="col-lg-4 input-col">
-                    <h6 class="text-granata font-15">Chilometri da percorrere</h6>
-                    <input class="ticket-input" type="text" placeholder=" Chilometri" name="chilometri">
+                    <h6 class="text-granata font-15">DISTANCE (KMS)</h6>
+                    <input class="ticket-input" type="text" placeholder=" Chilometers" name="chilometri">
                 </div>
                 <div class="col-lg-4 input-col">
-                    <h6 class="text-granata font-15">Fascia d'età</h6>
+                    <h6 class="text-granata font-15">AGE RANGE</h6>
                     <select name="age" id="fasciaDiEta" class="ticket-input">
-                        <option value="minorenne">Minorenne</option>
-                        <option value="maggiorenne">Maggiorenne</option>
-                        <option value="adulto">Adulto</option>
+                        <option value="minorenne">Underage</option>
+                        <option value="maggiorenne">Adult</option>
+                        <option value="adulto">Senior</option>
                     </select>
                 </div>
                 <div class="col-lg-12">
-                    <button class="my-button">Genera</button>
-                    <button class="my-button" type="reset">Annulla</button>
+                    <button class="my-button">Generate</button>
+                    <button class="my-button" type="reset">Cancel</button>
                 </div>
             </form>
         </div>
-        <h1 class="font-40 text-white">IL TUO BIGLIETTO</h1>
+        <h1 class="font-40 text-white">YOUR TICKET</h1>
         <div class="my-box box-output bg-white col-lg-12">
             <div class="col-lg-12">
-                <h3 class="user-details lefted">DETTAGLI PASSEGGERO</h3>
+                <h3 class="user-details lefted">PASSENGER DETAILS</h3>
             </div>
             <div class="ticket-row col-lg-12">
                 <div class="col-lg-3 ticket-col bg-granata">
                     <div class="col-top">
-                        <h3 class="text-white lefted">NOME PASSEGGERO</h3>
+                        <h3 class="text-white lefted">PASSENGER NAME</h3>
                     </div>
                     <div class="col-bot">
                     <h3 class="lefted text-white"><span id="nomeVisitatore"></span></h3>
@@ -54,16 +54,16 @@
                 </div>
                 <div class="col-lg-3 ticket-col">
                     <div class="col-top">
-                        <h4 class="lefted pad-top-20">Offerta</h4>
+                        <h4 class="lefted pad-top-20">Offer</h4>
                     </div>
                     <div class="col-bot">
-                        <h4 class="lefted pad-top-20">Sconto<span id="ageDiscount"></span></h4> 
+                        <h4 class="lefted pad-top-20">Discount<span id="ageDiscount"></span></h4> 
                     </div>
                 </div>
                 <div class="col-lg-3 ticket-col">
                     <div class="col-lg-6">
                         <div class="col-top">
-                            <h4 class="lefted pad-top-20">Carrozza</h4>
+                            <h4 class="lefted pad-top-20">Carriage number</h4>
                         </div>
                         <div class="col-bot">
                             <h4 class="lefted pad-top-20" id="carrozza-num"></h4>
@@ -71,7 +71,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="col-top">
-                            <h4 class="lefted pad-top-20">Codice CP</h4>
+                            <h4 class="lefted pad-top-20">Code</h4>
                         </div>
                         <div class="col-bot">
                             <h4 class="lefted pad-top-20" id="codice-cp"></h4>
@@ -80,7 +80,7 @@
                 </div>
                 <div class="col-lg-3 ticket-col">
                     <div class="col-top">
-                        <h4 class="lefted pad-top-20">Costo biglietto</h4>
+                        <h4 class="lefted pad-top-20">Ticket cost</h4>
                     </div>
                     <div class="col-bot">
                         <h4 class="lefted pad-top-20"><span id="ticketPrice"></span></h4>
