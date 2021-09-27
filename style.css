@@ -22,6 +22,10 @@ border-radius: 10px;
     font-weight: bold;
 }
 
+.my-button:hover {
+    background-color: white;
+}
+
 .bg-granata {
     background-color: rgb(170, 42, 81);
 }

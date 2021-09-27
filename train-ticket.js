@@ -26,14 +26,14 @@ myForm.addEventListener("submit", function (event) {
 
     nomeVisitatoreElement.innerHTML = nomeCognome; 
 
-    if (fasciaDiEta === "minorenne") {
+    if (fasciaDiEta === "Underage") {
         ageDiscountElement.innerHTML = " " + fasciaDiEta;
         ticketPriceElement.innerHTML = totCostMin + " €";
-    } else if (fasciaDiEta === "adulto") {
+    } else if (fasciaDiEta === "Senior") {
         ageDiscountElement.innerHTML = " " + fasciaDiEta;
         ticketPriceElement.innerHTML = totCostMax + " €";
     } else {
-        ageDiscountElement.innerHTML = " Nessuno";
+        ageDiscountElement.innerHTML = " None";
         ticketPriceElement.innerHTML = totCost + " €";
     }
 
